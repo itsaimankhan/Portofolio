@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center; /* Center align header text */
+    padding: 20px;
+    background-color: #87CEEB; /* Light sky blue color for header */
+    color: Black ;
+}
+
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    text-align: center; /* Center align headings */
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+.section-home, .section-about, .section-projects, .section-contact {
+    width: 100%; /* Full width for sections */
+    max-width: 1200px; /* Increased max-width for a fuller look */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Space between sections */
+}
+
+.section-home {
+    background-color: #f4f4f4; /* Light background for the home section */
+}
+
+.section-about {
+    background-color: #e2f7e2; /* Light green background for the about section */
+}
+
+.section-projects {
+    background-color: #f2e7fe; /* Light purple background for the projects section */
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    background: #ffffff; /* White background for each project box */
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 calc(33% - 20px); /* Allow boxes to take up space with margins */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center align text inside project boxes */
+}
+
+.project-box img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto;
+    border-radius: 5px;
+}
+
+.section-contact {
+    background-color: #f9f9f9; /* Light grey background for the contact section */
+}
+
+.contact-info {
+    text-align: center; /* Center align contact info */
+    margin-bottom: 20px; /* Space between contact info and form */
+}
+
+.contact-form {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px; /* Maximum width for the form */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the form */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: calc(100% - 10px); /* Full width minus padding */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #87CEEB; /* Light sky blue for the button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #66B2D9; /* Slightly darker on hover */
+}
+
+footer {
+    text-align: center; /* Center align footer text */
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    width: 100%;
+    position: relative; /* Ensure it stays in its position */
+    bottom: 0; /* Align it to the bottom */
+}
