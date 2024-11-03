@@ -69,24 +69,48 @@ h1, h2, h3 {
 /* Main content */
 main {
     width: 100%;
-    padding: 20px;
-    margin-top: 70px; /* Adjusts for fixed navbar height */
+    /* padding: 20px; */
+    margin-top: 70px; 
 }
 
 /* Home Section */
 .section-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #f4f4f4;
-    text-align: center;
     padding: 40px;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.home-text {
+    max-width: 50%;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-right: 50px;
 }
 
 .section-home h2 {
-    font-size: 2.5em;
+    font-size: 3.2em;
     color: #333;
 }
 
 .section-home p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #666;
 }
 
@@ -121,42 +145,53 @@ main {
     background-color: #66B2D9;
 }
 
+
 /* About, Projects, and Contact Sections */
 .section-about, .section-projects, .section-contact {
-    max-width: 1200px;
+    max-width: 100vw;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
 }
 
-.section-about {
-    background-color: #e2f7e2;
-}
 
 .section-projects {
-    background-color: #f2e7fe;
+    background-color: #FFD700;
 }
 
 /* Projects Container */
 .project-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 30px;
 }
 
 .project-box {
+    
     background: #ffffff;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 8px;
-    flex: 1 1 calc(33% - 20px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+.project-box:hover{
+    
+    transform: scale(1.05);
+}
+
+.section-projects img {
+   
+    height: 100px;
+    width: 20%;
+
 }
 
 /* Contact Section */
 .section-contact {
     background-color: #f9f9f9;
+     max-width: 100vw;
+
 }
 
 .contact-info {
@@ -166,13 +201,17 @@ main {
 
 .contact-form {
     margin-top: 20px;
+    margin-left: 500px;
     width: 100%;
     max-width: 600px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
 }
+
 
 .contact-form label {
     display: block;
