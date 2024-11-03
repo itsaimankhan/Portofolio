@@ -11,11 +11,11 @@ header {
     color: Black;
 }
 
-/* Navbar styling */
+/* Navigation Bar */
 .navbar {
     position: fixed;
     top: 0;
-    width: 100vw; /* Full viewport width */
+    width: 100vw; 
     background-color: #333;
     color: #fff;
     display: flex;
@@ -54,22 +54,14 @@ header {
     background-color: #FF4500;
 }
 
-/* Banner styling */
-.banner img {
-    width: 100%;
-    height: auto;
-}
-
 /* Headings */
 h1, h2, h3 {
     margin: 10px 0;
     text-align: center;
 }
 
-/* Main content */
 main {
     width: 100%;
-    /* padding: 20px; */
     margin-top: 70px; 
 }
 
@@ -81,6 +73,7 @@ main {
     background-color: #f4f4f4;
     padding: 40px;
     width: 100vw;
+    height: 60vh;
     margin: 0 auto;
 }
 
@@ -98,10 +91,11 @@ main {
 }
 
 .home-image img {
-    width: 100%;
+    width: 65vh;
+    height: 55vh;
     max-width: 400px;
     border-radius: 8px;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .section-home h2 {
@@ -146,19 +140,18 @@ main {
 }
 
 
-/* About, Projects, and Contact Sections */
+/* About, Projects, and Contact Sections' Common Style */
 .section-about, .section-projects, .section-contact {
     max-width: 100vw;
     padding: 20px;
     margin: 20px auto;
 }
 
-
+/* Project Section */
 .section-projects {
     background-color: #FFD700;
 }
 
-/* Projects Container */
 .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -211,7 +204,6 @@ main {
     cursor: pointer;
 
 }
-
 
 .contact-form label {
     display: block;
